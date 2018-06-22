@@ -6,6 +6,7 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+/* Implementação de FilmeServiceApi */
 public class FilmeServiceImpl implements FilmeServiceApi {
     RetrofitEndpoint mRetrofit;
 
@@ -15,7 +16,8 @@ public class FilmeServiceImpl implements FilmeServiceApi {
 
     @Override
     public void getFilmes(final FilmeServiceCallback<FilmeResultadoBusca> callback) {
-        Call<FilmeResultadoBusca> callFilme = mRetrofit.busca("star wars","json");
+//        Call<FilmeResultadoBusca> callFilme = mRetrofit.busca("star wars","json");
+        Call<FilmeResultadoBusca> callFilme = mRetrofit.busca("star wars","json", "c235fd18");
         callFilme.enqueue(new Callback<FilmeResultadoBusca>() {
             @Override
             public void onResponse(Call<FilmeResultadoBusca> call, Response<FilmeResultadoBusca> response) {

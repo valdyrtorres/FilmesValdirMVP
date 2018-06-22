@@ -6,6 +6,8 @@ import retrofit2.http.GET;
 import retrofit2.http.Query;
 
 public interface RetrofitEndpoint {
+//    @GET("./")
+//    Call<FilmeResultadoBusca> busca(@Query("s") String q, @Query("r") String format);
     @GET("./")
-    Call<FilmeResultadoBusca> busca(@Query("s") String q, @Query("r") String format);
+    Call<FilmeResultadoBusca> busca(@Query("s") String q, @Query("r") String format, @Query("apikey") String apiParam);
 }

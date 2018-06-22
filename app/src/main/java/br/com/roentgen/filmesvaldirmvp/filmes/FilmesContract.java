@@ -6,6 +6,10 @@ import java.util.List;
 
 import br.com.roentgen.filmesvaldirmvp.data.model.Filme;
 
+/*
+  Definição do contrato
+ */
+
 public interface FilmesContract {
 
     interface View {

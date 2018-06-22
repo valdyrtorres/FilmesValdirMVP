@@ -23,6 +23,10 @@ import br.com.roentgen.filmesvaldirmvp.R;
 import br.com.roentgen.filmesvaldirmvp.data.FilmeServiceImpl;
 import br.com.roentgen.filmesvaldirmvp.data.model.Filme;
 
+/*
+  Implementação da FilmesContract.View
+  Exibe a lista de filmes usando RecyclerView + CardView
+ */
 public class FilmesFragment extends Fragment implements FilmesContract.View {
 
     private FilmesContract.UserActionsListener mActionsListener;

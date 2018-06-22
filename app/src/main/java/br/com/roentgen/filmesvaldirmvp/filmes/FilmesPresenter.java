@@ -6,10 +6,17 @@ import br.com.roentgen.filmesvaldirmvp.data.FilmeServiceApi;
 import br.com.roentgen.filmesvaldirmvp.data.model.Filme;
 import br.com.roentgen.filmesvaldirmvp.data.model.FilmeResultadoBusca;
 
+/*
+  Implementação do contrato
+ */
+
 public class FilmesPresenter implements FilmesContract.UserActionsListener {
     private final FilmeServiceApi mApi;
     private final FilmesContract.View mFilmesView;
 
+    /*
+      As interfaces (contratos) são passadas por meio do construtor
+     */
     public FilmesPresenter(FilmeServiceApi api, FilmesContract.View filmesView) {
         mApi = api;
         mFilmesView = filmesView;
